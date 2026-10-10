@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from src.sling.routes import main_router
+from backend.app.src.sling.routes import main_router
 
-version = "0.1.0"
+version = "v1"
 
 app = FastAPI(
     title = "Verbose",
@@ -11,3 +11,6 @@ app = FastAPI(
 
 app.include_router(main_router, prefix=f"/api/{version}/verbose")
 
+@main_router.get("/")
+async def root():
+    return {"message": "Welcome to the Verbose API!"}

@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      
-        <AppRoutes /> {/* <-- Must be rendered here */}
-      
+      <main className="min-h-screen">
+        <AppRoutes />
+      </main>
       <Footer />
     </div>
   )

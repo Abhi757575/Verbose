@@ -11,6 +11,7 @@ import Dashboard from '../pages/Dashboard';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
+import Faq from '../pages/Faq';
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/demo" element={<Demo />} />
       <Route path="/pricing" element={<Pricing />} />
+      <Route path="/faq" element={<Faq />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
